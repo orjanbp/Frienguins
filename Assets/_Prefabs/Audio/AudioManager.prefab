@@ -1,0 +1,462 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5330405651946883675
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5330405651946884517}
+  - component: {fileID: 5330405651946884514}
+  - component: {fileID: 5330405651946884518}
+  - component: {fileID: 5330405651946884516}
+  - component: {fileID: 5330405651946883677}
+  - component: {fileID: 5330405651946883676}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5330405651946884517
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5330405651946883675}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5330405651946884514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5330405651946883675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f5601fcbc2a5204c983da70cc54f03b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInside: 1
+  meetAPenguin: 0
+  isMusicPlaying: 0
+--- !u!114 &5330405651946884518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5330405651946883675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f8e8e6c0f5a7444399385b89e102f87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  masterMixer: {fileID: 24100000, guid: 928c3b3d9261997429c4667314fbe0c1, type: 2}
+  rescueController: {fileID: 0}
+  pengu1vol: 0
+  pengu2vol: 0
+  pengu3vol: 0
+  pengu4vol: 0
+  pengu5vol: 0
+  pengu6vol: 0
+--- !u!114 &5330405651946884516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5330405651946883675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44152a614e5c30048a860ad74cb7826c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Door
+    clip: {fileID: 8300000, guid: 883115bb86a7a624ab0e9e9b8527c6c8, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Flame
+    clip: {fileID: 8300000, guid: 8f0b92e7e137b144f96024a3fdaa7f1f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Floorstep 1
+    clip: {fileID: 8300000, guid: 9f2b73a14eb8afe4e909d8c1afc27c66, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Floorstep 2
+    clip: {fileID: 8300000, guid: aae232acfd80be745b305d6dcf65c6d9, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Floorstep 3
+    clip: {fileID: 8300000, guid: 63188d9952a2e704685cf956d5470c51, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Floorstep 4
+    clip: {fileID: 8300000, guid: bd6cca5f25d5b574f9871071e599c30f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Oil Refill
+    clip: {fileID: 8300000, guid: 12fe3ef9ccfb452469202557c880e27d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Snowstep 1
+    clip: {fileID: 8300000, guid: a43e43d9d08e0e1459b3c75750f064f2, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Snowstep 2
+    clip: {fileID: 8300000, guid: fb25acb7c577c8d4fa798b1874303694, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Snowstep 3
+    clip: {fileID: 8300000, guid: af9043210bd6a6d46935a907e7e4de05, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Innevind
+    clip: {fileID: 8300000, guid: 68c8050193a792444ab52189aefcc829, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Utevind
+    clip: {fileID: 8300000, guid: 47222c08d15bdcc429b335d7b58b1e82, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Outdoor Intro
+    clip: {fileID: 8300000, guid: d1d367c901bcbca4e8aaeeb739c9ae18, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Outdoor Theme
+    clip: {fileID: 8300000, guid: aa2d4c04b3632b74cb8b4f55333e1f12, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Clock
+    clip: {fileID: 8300000, guid: 83287892a7a1bef46825bf15daecf2bd, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Fall
+    clip: {fileID: 8300000, guid: 1d67be48d2508b24dafe226ccd09cc95, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Intro
+    clip: {fileID: 8300000, guid: b23ac0404bdbaa94092e78502fcca158, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Wizard Angsty
+    clip: {fileID: 8300000, guid: 42bd7bbdf023a214fa52304a21d03b68, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Wizard Aquired
+    clip: {fileID: 8300000, guid: ba76103847c08884e8fb2cf550b970d2, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Wizard Lost
+    clip: {fileID: 8300000, guid: 085c013fdac8f4d448cca04b978136b6, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Mother Angsty
+    clip: {fileID: 8300000, guid: f84a87cca7e0bda4d8a9517fa6360c96, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Mother Aquired
+    clip: {fileID: 8300000, guid: 053a0bb9701158749bce13c6888e59b4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Mother Lost
+    clip: {fileID: 8300000, guid: 90fe99a47cc6e4141bfea1b339bfd094, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Kid Angsty
+    clip: {fileID: 8300000, guid: a136e5aa4958f984899168c26a563819, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Kid Aquired
+    clip: {fileID: 8300000, guid: e9868e1f3ac69084fb5f491cc21622c6, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Kid Lost
+    clip: {fileID: 8300000, guid: 04fc5f8b5c0782e458f2b5a572a3350e, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Teen Angsty
+    clip: {fileID: 8300000, guid: 738fe02a9ba8f1e4a9e2b5434e13fd6d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Teen Aquired
+    clip: {fileID: 8300000, guid: c393c07204c4eac458292e30d11d730c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Teen Lost
+    clip: {fileID: 8300000, guid: ca9bf3a2348071549acfe55d42a392a5, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Chef Angsty
+    clip: {fileID: 8300000, guid: b2952c551c68ee1418424e2e37a08b80, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Chef Aquired
+    clip: {fileID: 8300000, guid: bb5410a9b51d25d4abc7030cb1e1b917, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Chef Lost
+    clip: {fileID: 8300000, guid: 1f91dcb7238592b40b6a989591f8437b, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Pyse Angsty
+    clip: {fileID: 8300000, guid: e14e172eb1684e84e8b42a9715a66ad6, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Pyse Aquired
+    clip: {fileID: 8300000, guid: 57a168457c444f74bb07ac87a8c6aaac, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Pyse Lost
+    clip: {fileID: 8300000, guid: 32f8f4f5304b2c64984ccefedb4578cd, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+--- !u!114 &5330405651946883677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5330405651946883675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77746fa4135052c4d8b05c535fe8c920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: {fileID: 5330405651946883676}
+  wizardTalk:
+  - {fileID: 8300000, guid: 08f1bd6b00c82ca4baebd8d9ee86cc64, type: 3}
+  - {fileID: 8300000, guid: 588c553d13f11b4428db89b29739471f, type: 3}
+  - {fileID: 8300000, guid: ac63c408f3f499d488a19efd5dd376c5, type: 3}
+  - {fileID: 8300000, guid: afe1deef714475b4b943dc802184ba4f, type: 3}
+  - {fileID: 8300000, guid: 0eedaef038b8f4e46a98a9239e3eab14, type: 3}
+  - {fileID: 8300000, guid: b611d8f31708f134e9b112a2f2d83614, type: 3}
+  - {fileID: 8300000, guid: d037ffc656f8e7d4e970a14c6217640c, type: 3}
+  motherTalk:
+  - {fileID: 8300000, guid: e982c6a4f34cb3e449c6d6a1a4c530d4, type: 3}
+  - {fileID: 8300000, guid: 5b8204a83ab58ef4ca8fdeed499623df, type: 3}
+  - {fileID: 8300000, guid: 2ba965aa59bc9ce49aa278a599b4d357, type: 3}
+  - {fileID: 8300000, guid: 13fea916ffbcc6448be6cd9cf064b93b, type: 3}
+  - {fileID: 8300000, guid: 688c4c813af017d43b6f7ee865bda0a7, type: 3}
+  - {fileID: 8300000, guid: e8aaf37d0abce4344a08278913cf2bf2, type: 3}
+  - {fileID: 8300000, guid: 160de11fca23df34ab74f8ce0b1f7fe9, type: 3}
+  - {fileID: 8300000, guid: 814f330874a12dc4a94c30a404a43f0a, type: 3}
+  kidTalk:
+  - {fileID: 8300000, guid: 91a698007f9b6834fb4035a2d4e52d8b, type: 3}
+  - {fileID: 8300000, guid: d82e0bbcc89144b47aa48bae29b2b12a, type: 3}
+  - {fileID: 8300000, guid: 9be38f9147f250d43bad6b59dc2331c8, type: 3}
+  - {fileID: 8300000, guid: b57b6884e6b2a884a984d6dde184a788, type: 3}
+  - {fileID: 8300000, guid: 682097aa94a64fb459e54c37981acb5a, type: 3}
+  - {fileID: 8300000, guid: e5c130ee7a306d94fb6d999d716c62e1, type: 3}
+  - {fileID: 8300000, guid: a5f5e3ec3e8c7be4aa6c84d537823960, type: 3}
+  - {fileID: 8300000, guid: d5bfce8144b8edc49b410f99ff4f355a, type: 3}
+  teenTalk:
+  - {fileID: 8300000, guid: f43a52c2aa592324085f9c485fdf6548, type: 3}
+  - {fileID: 8300000, guid: 0122f72fe8cf7cc488988f7a753f733a, type: 3}
+  - {fileID: 8300000, guid: 9d62bad40f47e2b41a487bc5f5177483, type: 3}
+  - {fileID: 8300000, guid: e7c8945ceb19fe4418734f03ec249734, type: 3}
+  - {fileID: 8300000, guid: 5c4132e5ea77e004ab5b475e68ff6502, type: 3}
+  - {fileID: 8300000, guid: aaf306de4484e0341ad43a7ffac277db, type: 3}
+  - {fileID: 8300000, guid: ca3ed01fc02fb27488098a86d62e20c4, type: 3}
+  - {fileID: 8300000, guid: aad8d6b56b09588418a001f37945c568, type: 3}
+  - {fileID: 8300000, guid: db6af46b2a3c1f140b623471b0e96574, type: 3}
+  - {fileID: 8300000, guid: f582afea9d2cc6d438ed5c7eb8feefca, type: 3}
+  - {fileID: 8300000, guid: 1db1b0f02dcda654fad00674e7884c2f, type: 3}
+  - {fileID: 8300000, guid: 222a12293f83eb8418fffe4d48a4b767, type: 3}
+  - {fileID: 8300000, guid: 50856b18cf10df144af074f25a970db6, type: 3}
+  chefTalk:
+  - {fileID: 8300000, guid: 92f4fe2d891601f4ea8a06f287136543, type: 3}
+  - {fileID: 8300000, guid: c3546539bff313743a617463875a0fee, type: 3}
+  - {fileID: 8300000, guid: 5f8c306ce96dcb94695d5a167cb6733a, type: 3}
+  - {fileID: 8300000, guid: 9b6842fef2861be4f858c38cdb9c1903, type: 3}
+  - {fileID: 8300000, guid: 044de41b574c1cd42bd7433ffbeab9ef, type: 3}
+  - {fileID: 8300000, guid: 90228ed056e86224bb9ccf3f6bdc7d8b, type: 3}
+  - {fileID: 8300000, guid: 8d33b7888f644394d85812e084b8f7c9, type: 3}
+  - {fileID: 8300000, guid: 008eca2234afcff4d91e04a8e320c4f0, type: 3}
+  - {fileID: 8300000, guid: c83c584c3fef998438050ab86c12c542, type: 3}
+  pyseTalk:
+  - {fileID: 8300000, guid: 01379f21fdb06554f8658793d90d3ccc, type: 3}
+  - {fileID: 8300000, guid: 2bfd5e1121d124a4bb18eab184d18cf8, type: 3}
+  - {fileID: 8300000, guid: 2e8d673d3d18d3a4a82d2170ab72be32, type: 3}
+  - {fileID: 8300000, guid: bb8a1202669941f48ba9070b6049410b, type: 3}
+  - {fileID: 8300000, guid: 6dd52cb75f9a0df40bc5d5085474bf7f, type: 3}
+  - {fileID: 8300000, guid: b2baa637c6dc66449b2a1e078f4e9c12, type: 3}
+  - {fileID: 8300000, guid: fec600696f29d634daa1a6cb0051d4af, type: 3}
+--- !u!82 &5330405651946883676
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5330405651946883675}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
